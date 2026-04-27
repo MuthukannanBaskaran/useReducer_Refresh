@@ -54,3 +54,18 @@ export type type_Person = {
     };
     nat: string;
 };
+
+export type CounterState = {
+    count: number;
+};
+
+export const CounterActions = {
+    INCREMENT: "INCREMENT",
+    DECREMENT: "DECREMENT",
+    RESET: "RESET"
+} as const;
+
+export type CounterActionType =
+    | { type: typeof CounterActions.INCREMENT }
+    | { type: typeof CounterActions.DECREMENT }
+    | { type: typeof CounterActions.RESET };

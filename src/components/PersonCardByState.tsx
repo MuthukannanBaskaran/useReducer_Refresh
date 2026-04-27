@@ -1,9 +1,9 @@
 import type { type_Person } from "../types/type"
 
-export const PersonCard = ({ person }: { person: type_Person }) => {
+export const PersonCardByState = ({ person }: { person: type_Person }) => {
     return (
         <>
-            <div>PersonCard</div>
+            <div>Person Card by State</div>
             <img src={person.picture.large} alt="person" />
             <p>{`${person.name.title}. ${person.name.first} ${person.name.last}`}</p>
         </>
